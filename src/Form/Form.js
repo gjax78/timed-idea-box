@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 // import Ideas from '../Ideas/Ideas'
+import './Form.css'
 
 class Form extends Component {
   constructor() {
@@ -31,7 +32,7 @@ class Form extends Component {
   render() {
     return (
       <form>
-        <select
+        <select className='select'
           placeholder='title'
           name='title'
           onChange={event => this.handleChange(event)}>

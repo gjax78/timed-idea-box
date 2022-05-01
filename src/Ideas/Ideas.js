@@ -1,5 +1,6 @@
 import React from 'react'
 import IdeaCard from '../IdeaCard/IdeaCard'
+import './Ideas.css'
 
 const Ideas = ({ ideas, deleteIdea }) => {
   const ideaCards = ideas.map(idea => {

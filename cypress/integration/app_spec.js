@@ -23,7 +23,7 @@ describe('App renders', () => {
       cy.get('select[name="title"]')
       .select('Vacuum')
       .should('have.value', 'Vacuum')
-    cy.get('input[name="description"]')
+      cy.get('input[name="description"]')
       .type('text')
   })
 
@@ -40,7 +40,7 @@ describe('App renders', () => {
     cy.visit('http://localhost:3000')
     .get('button')
     .click({multiple: true})
+    cy.visit('http://localhost:3000')
+    .contains('fkdljs')
   })
-
-
 })
